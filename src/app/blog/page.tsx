@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/Badge";
 import { blogPosts, categories } from "@/lib/blog-data";
 import { ArrowRight, Clock } from "lucide-react";
 
-const fadeUp = {
+const fadeUp: any = {
   hidden: { opacity: 0, y: 20 },
   visible: (i = 0) => ({ opacity: 1, y: 0, transition: { duration: 0.45, delay: i * 0.06, ease: "easeOut" } }),
 };
