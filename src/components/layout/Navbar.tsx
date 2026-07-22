@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Image as ImageIcon, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
 
 export function Navbar() {
   return (
@@ -34,12 +35,19 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-4">
-          <Link href="/login" className="text-sm font-medium hover:text-primary hidden sm:block">
-            Sign In
-          </Link>
-          <Button variant="default" size="sm" asChild>
-            <Link href="/signup">Get Started Free</Link>
-          </Button>
+          <Show when="signed-out">
+            <SignInButton mode="modal">
+              <button className="text-sm font-medium hover:text-primary hidden sm:block">
+                Sign In
+              </button>
+            </SignInButton>
+            <SignUpButton mode="modal">
+              <Button variant="default" size="sm">Get Started Free</Button>
+            </SignUpButton>
+          </Show>
+          <Show when="signed-in">
+            <UserButton />
+          </Show>
         </div>
       </div>
     </nav>
