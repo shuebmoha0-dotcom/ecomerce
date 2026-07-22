@@ -36,12 +36,12 @@ export function Navbar() {
 
         <div className="flex items-center gap-4">
           <Show when="signed-out">
-            <SignInButton mode="modal">
+            <SignInButton mode="modal" asChild>
               <button className="text-sm font-medium hover:text-primary hidden sm:block">
                 Sign In
               </button>
             </SignInButton>
-            <SignUpButton mode="modal">
+            <SignUpButton mode="modal" asChild>
               <Button variant="default" size="sm">Get Started Free</Button>
             </SignUpButton>
           </Show>
