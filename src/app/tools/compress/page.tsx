@@ -128,9 +128,9 @@ export default function CompressorPage() {
                       <p className="text-xs text-muted-foreground mb-3">— or try a sample —</p>
                       <div className="flex justify-center gap-3">
                         {[
-                          { src: "/sample-perfume.png", label: "Perfume" },
-                          { src: "/sample-watch.png", label: "Watch" },
-                          { src: "/sample-candle.png", label: "Candle" },
+                          { src: "https://images.unsplash.com/photo-1594035910387-fea4771d9f48?auto=format&fit=crop&q=80&w=800", label: "Perfume" },
+                          { src: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800", label: "Watch" },
+                          { src: "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&q=80&w=800", label: "Candle" },
                         ].map((sample) => (
                           <button
                             key={sample.label}

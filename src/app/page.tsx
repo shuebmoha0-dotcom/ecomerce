@@ -17,7 +17,7 @@ const tools = [
     href: "/tools/remove-background",
     color: "from-violet-500 to-purple-600",
     lightColor: "bg-violet-50",
-    image: "/sample-handbag.png",
+    image: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=800",
     imageBg: "checkerboard",
   },
   {
@@ -27,7 +27,7 @@ const tools = [
     href: "/tools/resize",
     color: "from-blue-500 to-cyan-500",
     lightColor: "bg-blue-50",
-    image: "/sample-sneaker.png",
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800",
     imageBg: "white",
   },
   {
@@ -37,7 +37,7 @@ const tools = [
     href: "/tools/compress",
     color: "from-emerald-500 to-teal-500",
     lightColor: "bg-emerald-50",
-    image: "/sample-perfume.png",
+    image: "https://images.unsplash.com/photo-1594035910387-fea4771d9f48?auto=format&fit=crop&q=80&w=800",
     imageBg: "white",
   },
   {
@@ -47,7 +47,7 @@ const tools = [
     href: "/tools/convert",
     color: "from-orange-500 to-amber-500",
     lightColor: "bg-orange-50",
-    image: "/sample-watch.png",
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800",
     imageBg: "white",
   },
   {
@@ -57,7 +57,7 @@ const tools = [
     href: "/tools/bulk",
     color: "from-indigo-500 to-blue-600",
     lightColor: "bg-indigo-50",
-    image: "/sample-sneaker.png",
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800",
     imageBg: "white",
   },
   {
@@ -67,7 +67,7 @@ const tools = [
     href: "/tools/quality-check",
     color: "from-fuchsia-500 to-pink-600",
     lightColor: "bg-fuchsia-50",
-    image: "/sample-handbag.png",
+    image: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=800",
     imageBg: "white",
   },
   {
@@ -77,7 +77,7 @@ const tools = [
     href: "/tools/upscale",
     color: "from-blue-500 to-indigo-500",
     lightColor: "bg-blue-50",
-    image: "/sample-perfume.png",
+    image: "https://images.unsplash.com/photo-1594035910387-fea4771d9f48?auto=format&fit=crop&q=80&w=800",
     imageBg: "white",
   },
 ];
@@ -200,7 +200,7 @@ export default function HomePage() {
                     <p className="text-xs font-medium text-muted-foreground mb-2 text-center">Before</p>
                     <div className="rounded-2xl overflow-hidden bg-gray-100 aspect-square">
                       <img
-                        src="/sample-lifestyle.png"
+                        src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&q=80&w=800"
                         alt="Product before background removal"
                         className="w-full h-full object-cover"
                       />
@@ -214,7 +214,7 @@ export default function HomePage() {
                       style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Crect width='8' height='8' fill='%23f3f4f6'/%3E%3Crect x='8' y='8' width='8' height='8' fill='%23f3f4f6'/%3E%3C/svg%3E\")", backgroundSize: "16px 16px" }}
                     >
                       <img
-                        src="/sample-handbag.png"
+                        src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=800"
                         alt="Product after background removal"
                         className="w-full h-full object-contain"
                       />
