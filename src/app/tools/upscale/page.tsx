@@ -157,7 +157,7 @@ export default function UpscalerPage() {
                     <div className="mt-6 border-t border-dashed border-gray-200 pt-5">
                       <p className="text-xs text-muted-foreground mb-3">— or try a sample —</p>
                       <div className="flex justify-center gap-3">
-                        {[{ src: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800", label: "Sneaker" }, { src: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800", label: "Watch" }, { src: "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&q=80&w=800", label: "Candle" }].map((s) => (
+                        {[{ src: "/sample-sneaker.png", label: "Sneaker" }, { src: "/sample-watch.png", label: "Watch" }, { src: "/sample-candle.png", label: "Candle" }].map((s) => (
                           <button key={s.label} onClick={async (e) => { e.stopPropagation(); const res = await fetch(s.src); const blob = await res.blob(); handleFile(new File([blob], `${s.label}.png`, { type: blob.type })); }} className="flex flex-col items-center gap-1 group/s">
                             <div className="w-14 h-14 rounded-xl border border-gray-200 overflow-hidden bg-gray-50 group-hover/s:border-blue-400 transition-colors">
                               <img src={s.src} alt={s.label} className="w-full h-full object-contain p-1" />

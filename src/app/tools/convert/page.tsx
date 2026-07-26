@@ -115,9 +115,9 @@ export default function ConverterPage() {
                       <p className="text-xs text-muted-foreground mb-3">— or try a sample —</p>
                       <div className="flex justify-center gap-3">
                         {[
-                          { src: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=800", label: "Handbag" },
-                          { src: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800", label: "Sneaker" },
-                          { src: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800", label: "Watch" },
+                          { src: "/sample-handbag.png", label: "Handbag" },
+                          { src: "/sample-sneaker.png", label: "Sneaker" },
+                          { src: "/sample-watch.png", label: "Watch" },
                         ].map((sample) => (
                           <button
                             key={sample.label}

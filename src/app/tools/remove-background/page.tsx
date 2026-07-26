@@ -134,9 +134,9 @@ export default function BackgroundRemoverPage() {
                       <p className="text-xs text-muted-foreground mb-3">— or try a sample image —</p>
                       <div className="flex justify-center gap-3">
                         {[
-                          { src: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=800", label: "Handbag" },
-                          { src: "https://images.unsplash.com/photo-1594035910387-fea4771d9f48?auto=format&fit=crop&q=80&w=800", label: "Perfume" },
-                          { src: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800", label: "Sneaker" },
+                          { src: "/sample-handbag.png", label: "Handbag" },
+                          { src: "/sample-perfume.png", label: "Perfume" },
+                          { src: "/sample-sneaker.png", label: "Sneaker" },
                         ].map((sample) => (
                           <button
                             key={sample.label}

@@ -7,12 +7,12 @@ import { Button } from "@/components/ui/Button";
 import { ArrowRight, Sparkles, Camera, Zap, Globe, Heart } from "lucide-react";
 
 const styles = [
-  { name: "White Background", desc: "Clean, professional product shots on pure white", icon: "⚪", image: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=800" },
-  { name: "Lifestyle Photos", desc: "Product in real-life contexts and environments", icon: "🏠", image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&q=80&w=800" },
-  { name: "Luxury Studio", desc: "Premium dark or textured backgrounds with dramatic lighting", icon: "✨", image: "https://images.unsplash.com/photo-1594035910387-fea4771d9f48?auto=format&fit=crop&q=80&w=800" },
-  { name: "Holiday Campaigns", desc: "Seasonal and festive product photography", icon: "🎄", image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&q=80&w=800" },
-  { name: "AI Model Holding Product", desc: "Diverse AI models presenting your products", icon: "🧍", image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800" },
-  { name: "Multiple Angles", desc: "360° views and various perspectives", icon: "🔄", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800" },
+  { name: "White Background", desc: "Clean, professional product shots on pure white", icon: "⚪", image: "/sample-handbag.png" },
+  { name: "Lifestyle Photos", desc: "Product in real-life contexts and environments", icon: "🏠", image: "/sample-lifestyle.png" },
+  { name: "Luxury Studio", desc: "Premium dark or textured backgrounds with dramatic lighting", icon: "✨", image: "/sample-perfume.png" },
+  { name: "Holiday Campaigns", desc: "Seasonal and festive product photography", icon: "🎄", image: "/sample-candle.png" },
+  { name: "AI Model Holding Product", desc: "Diverse AI models presenting your products", icon: "🧍", image: "/sample-watch.png" },
+  { name: "Multiple Angles", desc: "360° views and various perspectives", icon: "🔄", image: "/sample-sneaker.png" },
 ];
 
 const features = [
@@ -105,7 +105,7 @@ export default function AIPhotographyPage() {
           className="mb-20"
         >
           <div className="grid grid-cols-3 sm:grid-cols-6 gap-3">
-            {["https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=800", "https://images.unsplash.com/photo-1594035910387-fea4771d9f48?auto=format&fit=crop&q=80&w=800", "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800", "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&q=80&w=800", "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800", "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&q=80&w=800"].map((img, i) => (
+            {["/sample-handbag.png", "/sample-perfume.png", "/sample-sneaker.png", "/sample-lifestyle.png", "/sample-watch.png", "/sample-candle.png"].map((img, i) => (
               <div key={i} className="aspect-square rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 group">
                 <img src={img} alt="AI product photo" className="w-full h-full object-contain p-2 group-hover:scale-110 transition-transform duration-500" />
               </div>

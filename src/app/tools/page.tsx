@@ -13,8 +13,8 @@ const tools = [
     href: "/tools/remove-background",
     gradient: "from-violet-500 to-purple-600",
     tag: "Most Popular",
-    previewBefore: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&q=80&w=800",
-    previewAfter: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=800",
+    previewBefore: "/sample-lifestyle.png",
+    previewAfter: "/sample-handbag.png",
     previewType: "before-after",
   },
   {
@@ -24,7 +24,7 @@ const tools = [
     href: "/tools/resize",
     gradient: "from-blue-500 to-cyan-500",
     tag: null,
-    preview: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800",
+    preview: "/sample-sneaker.png",
     previewType: "single",
   },
   {
@@ -34,7 +34,7 @@ const tools = [
     href: "/tools/compress",
     gradient: "from-emerald-500 to-teal-500",
     tag: null,
-    preview: "https://images.unsplash.com/photo-1594035910387-fea4771d9f48?auto=format&fit=crop&q=80&w=800",
+    preview: "/sample-perfume.png",
     previewType: "compress",
   },
   {
@@ -44,7 +44,7 @@ const tools = [
     href: "/tools/convert",
     gradient: "from-orange-500 to-amber-500",
     tag: null,
-    preview: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800",
+    preview: "/sample-watch.png",
     previewType: "format",
   },
   {
@@ -54,7 +54,7 @@ const tools = [
     href: "/tools/bulk",
     gradient: "from-indigo-500 to-blue-600",
     tag: "New",
-    preview: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800",
+    preview: "/sample-sneaker.png",
     previewType: "single",
   },
   {
@@ -64,9 +64,9 @@ const tools = [
     href: "/tools/quality-check",
     gradient: "from-fuchsia-500 to-pink-600",
     tag: "New",
-    previewBefore: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=800",
-    previewAfter: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=800", // We can just use the same image, or handle it differently if needed, but 'single' type is better for this one. Let's make it single.
-    preview: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800",
+    previewBefore: "/sample-handbag.png",
+    previewAfter: "/sample-handbag.png", // We can just use the same image, or handle it differently if needed, but 'single' type is better for this one. Let's make it single.
+    preview: "/sample-watch.png",
     previewType: "single",
   },
   {
@@ -76,9 +76,9 @@ const tools = [
     href: "/tools/upscale",
     gradient: "from-blue-500 to-indigo-500",
     tag: "New",
-    previewBefore: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&q=80&w=800",
-    previewAfter: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=800",
-    preview: "https://images.unsplash.com/photo-1594035910387-fea4771d9f48?auto=format&fit=crop&q=80&w=800",
+    previewBefore: "/sample-lifestyle.png",
+    previewAfter: "/sample-handbag.png",
+    preview: "/sample-perfume.png",
     previewType: "single", // Upscaler preview can just be single for now since we don't have a specific before/after type built for it in this loop, or we could use before-after. Let's use before-after.
   },
 ];

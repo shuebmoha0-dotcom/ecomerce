@@ -228,7 +228,7 @@ export default function QualityCheckerPage() {
                     <div className="mt-6 border-t border-dashed border-gray-200 pt-5">
                       <p className="text-xs text-muted-foreground mb-3">— or try a sample —</p>
                       <div className="flex justify-center gap-3">
-                        {[{ src: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&q=80&w=800", label: "Handbag" }, { src: "https://images.unsplash.com/photo-1594035910387-fea4771d9f48?auto=format&fit=crop&q=80&w=800", label: "Perfume" }, { src: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&q=80&w=800", label: "Lifestyle" }].map((s) => (
+                        {[{ src: "/sample-handbag.png", label: "Handbag" }, { src: "/sample-perfume.png", label: "Perfume" }, { src: "/sample-lifestyle.png", label: "Lifestyle" }].map((s) => (
                           <button key={s.label} onClick={async (e) => { e.stopPropagation(); const res = await fetch(s.src); const blob = await res.blob(); handleFile(new File([blob], `${s.label}.jpg`, { type: blob.type })); }} className="flex flex-col items-center gap-1 group/s">
                             <div className="w-14 h-14 rounded-xl border border-gray-200 overflow-hidden bg-gray-50 group-hover/s:border-violet-400 transition-colors">
                               <img src={s.src} alt={s.label} className="w-full h-full object-contain p-1" />
